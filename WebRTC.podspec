@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name         = "Kore WebRTC"
+  s.name         = "KoreWebRTC"
   s.version      = "1.0.0"
   s.summary      = "WebRTC SDK for iOS"
   s.description  = <<-DESC
