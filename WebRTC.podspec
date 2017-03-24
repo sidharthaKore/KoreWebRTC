@@ -12,6 +12,9 @@ Pod::Spec.new do |s|
   s.author       = "Kore.ai"
   s.source       = { :git => "https://github.com/sidharthaKore/KoreWebRTC.git", :tag => s.version }
   s.platform     = :ios, "8.0"
-
+  s.xcconfig            = {
+    'FRAMEWORK_SEARCH_PATHS' => '${PODS_ROOT}/KoreWebRTC',
+    'LD_RUNPATH_SEARCH_PATHS' => '@loader_path/../Frameworks'
+  }
   s.vendored_frameworks = "WebRTC.framework"
 end
